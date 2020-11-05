@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Product</title>
+  <script type="text/javascript">
+    function displayProductDetails(id, name, descripton, price) {
+      this.id = id;
+      this.name = name;
+      this.descripton = descripton;
+      this.price = price;
+    }
+
+    function calculateDisc(disc) {
+      this.disc = product.price * 0.2;
+    }
+
+    var product = new displayProductDetails(1, "book", "big book", 12.00);
+    document.write("ID: " + product.id + "<br/>");
+    document.write("Name: " + product.name + "<br/>");
+    document.write("Description: " + product.descripton + "<br/>");
+    document.write("Price: " + product.price + "<br/>");
+
+    var discount = new calculateDisc(0.5);
+    document.write("The discount of " + product.name + " is: " + discount.disc + ". Then the price is iqual to: " + (product.price - discount.disc));
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
